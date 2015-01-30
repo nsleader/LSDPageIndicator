@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSDPageIndicator.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,11 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+	self.pageIndocator.alignment = LSDPageIndicatorAlignmentCenter;
+	self.pageIndocator.numberOfDots = 4;
+	self.pageIndocator.indexOfSelectedDot = 0;
+	self.pageIndocator.dotSpace = 4.f;
+	self.pageIndocator.dotDiameter = 5.f;];
 }
 
 @end

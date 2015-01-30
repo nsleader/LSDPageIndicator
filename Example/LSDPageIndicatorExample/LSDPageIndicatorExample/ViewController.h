@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSDPageIndicator;
+
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet LSDPageIndicator *pageIndocator;
 
 @end
 
